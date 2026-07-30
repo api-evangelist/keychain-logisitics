@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://www.keychain.com/.well-known/*
+host: https://www.keychain.com
+note: >-
+  No .well-known discovery documents, security.txt, OIDC/OAuth metadata,
+  API catalog, ai-plugin, or llms.txt are published. robots.txt (200)
+  disallows /api/* (internal Next.js routes only). No developer or API
+  subdomain resolves. Recorded for auditability; absence is a valid result
+  and no WellKnown catalog pointer is wired.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
