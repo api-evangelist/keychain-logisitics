@@ -1,7 +1,18 @@
 aid: keychain-logisitics
-name: Keychain Logisitics
-description: Keychain Logisitics is a company surfaced as a portfolio company of a16z and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Keychain
+description: >-
+  Keychain is an AI-powered operating system and network for the consumer
+  packaged goods (CPG) industry, connecting brands and retailers with the
+  contract manufacturers, co-packers, and suppliers that make their products.
+  The platform lets CPG brands discover and match with vetted manufacturing
+  partners, manage sourcing and production relationships, and streamline the
+  supplier-discovery workflow that has traditionally been manual and
+  relationship-driven. Backed by Andreessen Horowitz (a16z), Keychain was added
+  to the API Evangelist network as a company profile surfaced from the a16z
+  venture portfolio. As of this enrichment pass Keychain publishes a marketing
+  and product web presence at keychain.com but does not expose a public
+  developer program, API reference, or machine-readable API discovery surface
+  (no developer/API subdomain, no /.well-known catalog, no llms.txt).
 url: https://raw.githubusercontent.com/api-evangelist/keychain-logisitics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +20,51 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.keychain.com/favicon48x48.ico
 tags:
 - Company
+- CPG
+- Consumer Packaged Goods
+- Manufacturing
+- Contract Manufacturing
+- Supply Chain
+- Marketplace
+- Artificial Intelligence
+common:
+- type: Website
+  url: https://www.keychain.com
+- type: TermsOfService
+  url: https://www.keychain.com/terms
+- type: PrivacyPolicy
+  url: https://www.keychain.com/privacy
+- type: Support
+  url: https://www.keychain.com/contact
+- type: Blog
+  url: https://www.keychain.com/k/b
+- type: DomainSecurity
+  url: security/keychain-logisitics-domain-security.yml
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
